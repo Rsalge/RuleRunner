@@ -1,10 +1,14 @@
 const chai = require("chai");
 var assert = chai.assert;
-const rule = require("../rules/rules.js");
+const rules = require("../rules/rules.js");
 
-describe("simple function", function() {
-  it("Should return true", function() {
-    let test = rule.test();
-    assert.equal(test, true);
+describe("Rule C tests", function() {
+  it("Should be a function", function() {
+    let test = typeof rules.ruleC;
+    assert.equal(test, "function");
+  });
+  it("Should return false for invalid input", function() {
+    let res = rules.ruleC("test");
+    assert.equal(res, false);
   });
 });
