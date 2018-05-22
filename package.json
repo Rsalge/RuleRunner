@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/Rsalge/RuleRunner",
   "author": "Ross Salge <rossnsalge@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
 }
