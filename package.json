@@ -1,0 +1,9 @@
+{
+  "name": "RuleRunner",
+  "version": "1.0.0",
+  "description": "A NodeJS implementation of the SecureLink RuleRunner challenge. ",
+  "main": "index.js",
+  "repository": "https://github.com/Rsalge/RuleRunner",
+  "author": "Ross Salge <rossnsalge@gmail.com>",
+  "license": "MIT"
+}
