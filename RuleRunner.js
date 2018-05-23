@@ -1,26 +1,12 @@
 const fs = require("fs");
-const rules = require("./rules.js");
+const { ruleA, ruleB, ruleC } = require("./rules/rules.js");
+const { validInput } = require("./rules/validInput.js");
 
 let arguments = process.argv;
-
-console.log("Argurments", arguments);
-
+//we slice off the first two arguments as they reference node install path and current file location
 let nums = arguments.slice(2);
-
-console.log("Numbers: ", nums);
-
-const validInput = nums => {
-  for (let i = 0; i < nums.length; i++) {
-    if (isNaN(nums[i])) {
-      console.log(
-        "Invalid Input Format, please enter only numbers followed by spaces"
-      );
-      return false;
-    }
-  }
-  return true;
-};
-
 if (validInput(nums)) {
-  console.log("Valid Input");
+  if (ruleA(nums) && ruleB(nums) && ruleC(nums)) {
+    console.log("ALL rules passed");
+  }
 }
