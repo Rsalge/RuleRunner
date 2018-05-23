@@ -6,6 +6,8 @@ const validInput = nums => {
       );
       return false;
     }
+    //modify input here for future logic, otherwise numbers are interpreted as strings
+    nums[i] = Number(nums[i]);
   }
   return true;
 };
