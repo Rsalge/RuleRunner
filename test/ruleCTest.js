@@ -1,6 +1,6 @@
 const chai = require("chai");
 var assert = chai.assert;
-const rules = require("../rules/rules.js");
+const rules = require("../rules/ruleC.js");
 
 describe("Rule C tests", function() {
   it("Should be a function", function() {
